@@ -1,0 +1,47 @@
+body {
+  background-image: url("../images/gate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  left: 158px;
+  position: absolute;
+  top: 110px;
+  color: #838383;
+  text-align: left;
+  font-family: "Dosis", sans-serif;
+}
+
+h2 {
+  right: 250px;
+  position: absolute;
+  top: 115px;
+  color: #838383;
+  text-size: larger;
+  font-family: "Dosis", sans-serif;
+}
+
+.row {
+  position: block;
+  color: #969494;
+  margin-top: 75px;
+  font-size: larger;
+  font-family: "Dosis", sans-serif;
+}
+
+.searchbar {
+  background-color: #f4f9f9;
+}
+
+.container-app {
+  position: absoloute;
+}
+.container {
+  position: block;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 35px;
+  border-radius: 25px;
+}

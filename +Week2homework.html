@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cara's Weather App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container container-app">
+
+    <div class=" mb-3 searchbar">
+      <form id="search-form">
+        <input type="text" class="form-control" id="search-city" placeholder="Enter City" autofocus />
+        <button type="button" id="current-position">Current</button>
+      </form>
+    </div>
+
+    <h1 class="card-title" id="display-city"> Atlanta, GA </h1>
+
+    <h2 class="currentDate" id="date"> 3:18
+    </h2>
+    <p>
+
+      <span class="temperature" id="temperature">19</span><span class="units">
+        <a href="#" id="celsius-link">°C</a> |
+        <a href="#" id="fahrenheit-link">°F</a>
+      </span>
+    </p> <i class="fas fa-sun"></i>
+
+    <div class="container">
+      <div class="row week-view text-center">
+
+        <div class="col">
+          23°🌤
+        </div>
+        <div class="col">
+          32°🌞
+        </div>
+        <div class="col">
+          28°🌤
+        </div>
+        <div class="col">
+          23°⛅️
+        </div>
+        <div class="col">
+          21°🌨
+
+        </div>
+      </div>
+
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>

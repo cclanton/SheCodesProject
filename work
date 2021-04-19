@@ -1,0 +1,50 @@
+body {
+  background-image: url("../images/gate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  left: 158px;
+  position: absolute;
+  top: 110px;
+  color: #7D8493;
+  text-align: center;
+}
+
+h2 {
+  position: absolute;
+  right: 350px;
+  top: 115px;
+  color:#7D8493;
+  text-size: larger;
+}
+
+.row {
+  position: float;
+  color: #7D8493;
+  margin-top: 75px;
+  font-size: larger;
+}
+.containerheader {
+  position: float;
+}
+.container {
+  position: float;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 35px;
+  border-radius: 25px;
+}
+
+.city {
+  font-family: font-family: "Dosis", sans-serif;
+  margin-top: -100px;
+}
+
+.temp {
+  font-family: font-family: "Dosis", sans-serif;
+  margin-top: -100px;
+}
