@@ -55,6 +55,7 @@ function getCurrentCity(response) {
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
 }
 
+
 function searchCity(city) {
   let apiKey = "bad7b7623aa69aa37c2b1140525d244e";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -86,3 +87,28 @@ function convertToFahrenheit(event) {}
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thur", "Fri", "Sat"];
+  days.forEach(function(day) {
+forecastHTML = forecastHTML + 
+`
+          <div class="col-2">
+            <div class = "weather-forecast-date"> ${day}
+          </div>   
+            <div class = "weather-forecast-temperatures">
+        <span class= "weather-forecast-temperature-max">
+          18 </span>
+          <span class="weather-forecast-temperature-min">
+            12
+        </span>
+            </div>
+          </div>
+        </div>
+        `;
+  })
+        forecastHTML = forecastHTML+`</div>`;
+        forecastElement.innerHTML = forecastHTML;
+}
